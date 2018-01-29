@@ -1,0 +1,23 @@
+def tomcatHost = System.getProperties("hostname")?:'localhost'
+def tomcatPost = System.getProperty("port")?:8080
+def tomcatUser = System.getProperty("user")?:'admin'
+def tomcatPass = System.getProperty("password")?:'admin'
+
+task deploy{
+    gradle.projectsEvaluated {
+        configure(webProjects()) {
+            apply plugin: 'Employee.bmuschko.cargo'
+            cargo {
+                containerId = 'tomcat8x'
+                port=tomcatPort
+
+                remote {
+                    hostname = tomcatHost
+                    username = tomcatUser
+                    password = tomcatPass
+                }
+            }
+            dependsOn cargoRedeployRemote
+        }
+    }
+}
