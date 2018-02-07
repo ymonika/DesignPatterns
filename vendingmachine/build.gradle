@@ -1,4 +1,5 @@
 group 'vendingmachine'
+
 version 'unspecified'
 
 apply plugin: 'java'

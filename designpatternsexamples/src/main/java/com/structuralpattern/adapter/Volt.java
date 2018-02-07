@@ -15,4 +15,11 @@ public class Volt {
     public void setVolt(int volt) {
         this.volt = volt;
     }
+
+    @Override
+    public String toString() {
+        return "Volt{" +
+                "volt=" + volt +
+                '}';
+    }
 }

@@ -1,6 +1,6 @@
-include 'forkjoinframwork'
-include 'berlinclock'
-include 'jdk8'
-include 'designpatterns'
-include 'vendingmachine'
+rootProject.name='designpatterns'
+
 include 'coffeemachine'
+include 'designpatternsexamples'
+include 'forkjoinframwork'
+include 'vendingmachine'
