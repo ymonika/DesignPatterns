@@ -1,4 +1,4 @@
-package com.structuralpattern.adapterdesignpattern;
+package com.structuralpattern.adapter;
 
 public interface SocketAdapter {
 
