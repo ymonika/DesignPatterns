@@ -1,30 +1,36 @@
 package com.behavioraldesignpatterns.observer;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 public class RedDress implements Observable {
 
-    private List<Observer> observerList = new LinkedList<>();
-    private Boolean inStock = false;
+    private List<Observer> observerList =  new ArrayList<>();
+    private boolean available;
 
-    public Boolean getInStock() {
-        return inStock;
-    }
-    //any change in inStock will happen thrg setter
-    public void setInStock(Boolean inStock) {
-        this.inStock = inStock;
-        notifyUser();
+    public RedDress() {
+
     }
 
-    public void addObserver(Observer observer) {
-        observerList.add(observer);
+    public boolean isAvailable() {
+        return available;
     }
 
-    public void removeObserver(Observer observer) {
-        observerList.remove(observer);
+    public void setAvailable(boolean available) {
+        this.available = available;
+        notifyObserver();
     }
-    public void notifyUser() {
-        observerList.forEach(observer -> observer.sendEmail());
+
+    public void notifyObserver() {
+        observerList.forEach(consumer -> consumer.sendMsg());
     }
+
+    public void removeObserver(Observer o) {
+        observerList.remove(o);
+    }
+
+    public void addObserver(Observer o) {
+        observerList.add(o);
+    }
+
 }

@@ -2,8 +2,7 @@ package com.behavioraldesignpatterns.observer;
 
 public interface Observable {
 
-    void addObserver(Observer observer);
-    void removeObserver(Observer observer);
-    void notifyUser();
-
+    void notifyObserver();
+    void removeObserver(Observer o);
+    void addObserver(Observer o);
 }
