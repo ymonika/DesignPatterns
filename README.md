@@ -4,7 +4,7 @@ DesignPatterns
 2. designpatterns module =>
     2.1 Behavioral design pattern: Observer, Strategy
     2.2 Creational design pattern: Abstract Factory, Builder, Factory, Singleton
-    2.3 Structural design pattern: Adapter, Proxy
+    2.3 Structural design pattern: Adapter, Proxy, Facade
 
 Proxy Design Pattern:
 A bank's heque or credit card is a proxy for what is in our bank account. It can be used in place of cash,
@@ -20,5 +20,13 @@ The object that joins these unrelated interfaces is called an Adapter.
 In the adapter pattern, a wrapper class (i.e., the adapter) is used translate requests from
 it to another class (i.e., the adoptee). In effect, an adapter provides particular interactions
 with an adoptee that are not offered directly by the adoptee.
+
+Facade Design Pattern:
+It is used to identifying a simple way to realize relationships between entities
+the Facade can be used to hide the inner workings of a third party library, or some legacy code.
+All that the client needs to do is interact with the Facade, and not the subsystem that it is encompassing
+For example, in web services, one web service might provide access to a number of smaller services
+that have been hidden from the caller by the facade
+
 
 #Specification.COMMENT
