@@ -4,7 +4,7 @@ DesignPatterns
 2. designpatterns module =>
     2.1 Behavioral design pattern: Observer, Strategy
     2.2 Creational design pattern: Abstract Factory, Builder, Factory, Singleton
-    2.3 Structural design pattern: Adapter, Proxy, Facade
+    2.3 Structural design pattern: Adapter, Proxy, Facade, Composite
 
 Proxy Design Pattern:
 A bank's heque or credit card is a proxy for what is in our bank account. It can be used in place of cash,
@@ -28,5 +28,9 @@ All that the client needs to do is interact with the Facade, and not the subsyst
 For example, in web services, one web service might provide access to a number of smaller services
 that have been hidden from the caller by the facade
 
+Composte Design Pattern:
+Composite pattern is used where we need to treat a group of objects in similar way as a single object.
+Composite pattern composes objects in term of a tree structure to represent part as well as whole hierarchy.
+This type of design pattern comes under structural pattern as this pattern creates a tree structure of group of objects.
 
 #Specification.COMMENT
