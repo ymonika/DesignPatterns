@@ -1,10 +1,10 @@
 
 DesignPatterns
-1. This git repo contains java design pattern examples like coffee machine, vending machine, thread pool executor examples
+1. This git repo contains java design pattern examples like coffee machine, vending machine, thread pool executor
 2. designpatterns module =>
     2.1 Behavioral design pattern: Observer, Strategy
     2.2 Creational design pattern: Abstract Factory, Builder, Factory, Singleton
-    2.3 Structural design pattern: Adapter, Proxy, Facade, Composite, Bridge
+    2.3 Structural design pattern: Adapter, Proxy, Facade, Composite, Bridge, Decorator
 
 Proxy Design Pattern:
 A bank's heque or credit card is a proxy for what is in our bank account. It can be used in place of cash,
@@ -39,5 +39,11 @@ This type of design pattern comes under structural pattern as this pattern decou
 class by providing a bridge structure between them.
 This pattern involves an interface which acts as a bridge which makes the functionality of concrete classes independent from
 interface implementer classes. Both types of classes can be altered structurally without affecting each other.
+
+Decorator Design Pattern:
+Decorator pattern allows a user to add new functionality to an existing object without altering its structure.
+This type of design pattern comes under structural pattern as this pattern acts as a wrapper to existing class.
+This pattern creates a decorator class which wraps the original class and provides additional functionality keeping class
+methods signature intact.
 
 #Specification.COMMENT
