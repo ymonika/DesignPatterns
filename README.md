@@ -46,4 +46,78 @@ This type of design pattern comes under structural pattern as this pattern acts 
 This pattern creates a decorator class which wraps the original class and provides additional functionality keeping class
 methods signature intact.
 
+Singleton Design Pattern:
+Singleton pattern restricts the instantiation of a class and ensures that only one instance of the class exists in the JVM.
+The singleton class will provide single access point to get the instance of the this class.
+Singleton pattern is used for logging, drivers objects, caching and thread pool.
+Singleton design pattern is also used in other design patterns like Abstract Factory, Builder, Prototype, Facade etc.
+Singleton design pattern is used in core java classes also, for example java.lang.Runtime, java.awt.Desktop.
+
+Different approaches of Singleton pattern:
+1. Eager Initialization:
+In eager initialization, the instance of Singleton Class is created at the time of class loading, this is the easiest
+method to create a singleton class but it has a drawback that instance is created even though client application might
+not be using it.
+If your singleton class is not using a lot of resources, this is the approach to use. But in most of the scenarios,
+Singleton classes are created for resources such as File System, Database connections etc and we should avoid the
+instantiation until unless client calls the getInstance method. Also this method doesn’t provide any options for
+exception handling
+2. Static Block Initialization:
+Static block initialization implementation is similar to eager initialization, except that instance of class is
+created in the static block that provides option for exception handling.
+Both eager initialization and static block initialization creates the instance even before it’s being used and that
+is not the best practice to use. So in further sections, we will learn how to create Singleton class that supports
+lazy initialization.
+3. Lazy Initialization:
+This method works fine in case of single threaded environment but when it comes to multithreaded enviorment, it can cause
+issues if multiple are inside the loop at the same time. It will destroy the signletone pattern & both threads will get
+the different instances of singleton class. In next section, we will see different ways to create a thread-safe
+singleton class.
+4. Thread Safe Singleton:
+This method works fine and provides thread-safety but it reduces the performance because of cost associated with the
+synchronized method, although we need it only for the first few threads who might create the separate instances
+The problem with above serialized singleton class is that whenever we deserialize it, it will create a new instance
+of the class.
+So it destroys the singleton pattern, to overcome this scenario all we need to do it provide the
+implementation of readResolve() method.
+
+
+
+
+
+
+
 #Specification.COMMENT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
