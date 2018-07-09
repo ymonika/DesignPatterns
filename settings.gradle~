@@ -1,0 +1,6 @@
+rootProject.name='designpatterns'
+
+include 'coffeemachine'
+include 'designpatternsexamples'
+include 'forkjoinframwork'
+include 'vendingmachine'
