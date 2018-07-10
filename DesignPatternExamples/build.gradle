@@ -1,4 +1,4 @@
-group 'DesignPatternsExamples'
+group 'DesignPatternExamples'
 
 apply plugin: 'java'
 

@@ -1,17 +1,16 @@
+# DesignPatterns
 
-DesignPatterns
-1. This git repo contains java design pattern examples like coffee machine, vending machine, thread pool executor
-2. designpatterns module =>
-    2.1 Behavioral design pattern: Observer, Strategy
-    2.2 Creational design pattern: Abstract Factory, Builder, Factory, Singleton
-    2.3 Structural design pattern: Adapter, Proxy, Facade, Composite, Bridge, Decorator
+###### DesignPatternsExamples module:
+    * Behavioral design pattern: Observer, Strategy
+    * Creational design pattern: Abstract Factory, Builder, Factory, Singleton
+    * Structural design pattern: Adapter, Proxy, Facade, Composite, Bridge, Decorator
 
-Proxy Design Pattern:
+* Proxy Design Pattern:
 A bank's heque or credit card is a proxy for what is in our bank account. It can be used in place of cash,
 and provides a means of accessing that cash when required. And that’s exactly what the Proxy pattern does
 – “Controls and manage access to the object they are protecting“.
 
-Adapter Design Pattern:
+* Adapter Design Pattern:
 As a real life example, we can think of a mobile charger as an adapter because mobile battery needs 3 volts
 to charge but the normal socket produces either 120V (US) or 240V (India).
 So the mobile charger works as an adapter between mobile charging socket and the wall socket.
@@ -21,32 +20,32 @@ In the adapter pattern, a wrapper class (i.e., the adapter) is used translate re
 it to another class (i.e., the adoptee). In effect, an adapter provides particular interactions
 with an adoptee that are not offered directly by the adoptee.
 
-Facade Design Pattern:
+* Facade Design Pattern:
 It is used to identifying a simple way to realize relationships between entities
 the Facade can be used to hide the inner workings of a third party library, or some legacy code.
 All that the client needs to do is interact with the Facade, and not the subsystem that it is encompassing
 For example, in web services, one web service might provide access to a number of smaller services
 that have been hidden from the caller by the facade
 
-Composte Design Pattern:
+* Composte Design Pattern:
 Composite pattern is used where we need to treat a group of objects in similar way as a single object.
 Composite pattern composes objects in term of a tree structure to represent part as well as whole hierarchy.
 This type of design pattern comes under structural pattern as this pattern creates a tree structure of group of objects.
 
-Bridge Design Pattern:
+* Bridge Design Pattern:
 Bridge is used when we need to decouple an abstraction from its implementation so that the two can vary independently.
 This type of design pattern comes under structural pattern as this pattern decouples implementation class and abstract
 class by providing a bridge structure between them.
 This pattern involves an interface which acts as a bridge which makes the functionality of concrete classes independent from
 interface implementer classes. Both types of classes can be altered structurally without affecting each other.
 
-Decorator Design Pattern:
+* Decorator Design Pattern:
 Decorator pattern allows a user to add new functionality to an existing object without altering its structure.
 This type of design pattern comes under structural pattern as this pattern acts as a wrapper to existing class.
 This pattern creates a decorator class which wraps the original class and provides additional functionality keeping class
 methods signature intact.
 
-Singleton Design Pattern:
+* Singleton Design Pattern:
 Singleton pattern restricts the instantiation of a class and ensures that only one instance of the class exists in the JVM.
 The singleton class will provide single access point to get the instance of the this class.
 Singleton pattern is used for logging, drivers objects, caching and thread pool.
@@ -80,44 +79,3 @@ The problem with above serialized singleton class is that whenever we deserializ
 of the class.
 So it destroys the singleton pattern, to overcome this scenario all we need to do it provide the
 implementation of readResolve() method.
-
-
-
-
-
-
-
-#Specification.COMMENT
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
