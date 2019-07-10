@@ -5,6 +5,12 @@
     * Creational design pattern: Abstract Factory, Builder, Factory, Singleton
     * Structural design pattern: Adapter, Proxy, Facade, Composite, Bridge, Decorator
 
+* Observer Design Pattern:
+The Observer design pattern defines One-to-Many dependency between objects so that when one object changes
+state, all of it's dependents are notified and updated automatically. The object which is being watched is
+called the subject. The objects which are watching the state changes are called observers or listeners.
+This pattern decouples Subject from it's Observers. Only the observers have direct knowledge about subject.
+
 * Proxy Design Pattern:
 A bank's heque or credit card is a proxy for what is in our bank account. It can be used in place of cash,
 and provides a means of accessing that cash when required. And that’s exactly what the Proxy pattern does
