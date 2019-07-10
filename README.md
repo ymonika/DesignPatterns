@@ -11,6 +11,13 @@ state, all of it's dependents are notified and updated automatically. The object
 called the subject. The objects which are watching the state changes are called observers or listeners.
 This pattern decouples Subject from it's Observers. Only the observers have direct knowledge about subject.
 
+* Strategy Design Pattern:
+Strategy Pattern, a useful pattern in changing algorithm implementations at runtime, without causing tight coupling.
+It is used to manage algorithms, relationship & responsibilities between objects. The Strategy pattern is to be used
+where you want to choose the algorithm to use at runtime. A good use of the Strategy pattern would be saving files in
+different formats, running various sorting algorithms, or file compression. The Strategy pattern provides a way to
+define a family of algorithms, encapsulate each one as an object, and make them interchangeable.
+
 * Proxy Design Pattern:
 A bank's heque or credit card is a proxy for what is in our bank account. It can be used in place of cash,
 and provides a means of accessing that cash when required. And that’s exactly what the Proxy pattern does
